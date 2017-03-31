@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 0.406 sec <<< FAILURE! - in TestSuite
+setUp(vtiger.DemoMaven)  Time elapsed: 0.33 sec  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable does not exist: G:\Java\workspace\DemoMaven\IEDriverServer.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:123)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:118)
+	at org.openqa.selenium.ie.InternetExplorerDriverService.access$000(InternetExplorerDriverService.java:32)
+	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:302)
+	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:248)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:170)
+	at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:148)
+	at vtiger.DemoMaven.setUp(DemoMaven.java:25)
+
